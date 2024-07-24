@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  /* Font sizes */
+  /* Font weights */
+  /* Line heights */
+  /* Letter spacings */
+  /* Box shadows */
+  /* Border widths */
+  /* Border radius */
+  /* Spacings */
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Roboto";
+}
