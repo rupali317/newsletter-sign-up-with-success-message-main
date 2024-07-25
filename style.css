@@ -1,12 +1,39 @@
 :root {
   /* Colors */
+  --color-primary-1: hsl(4, 100%, 67%); /* #FF6155 */
+  --color-primary-2: hsl(4, 100%, 67%, 50%); /* #FF6155 50% */
+  --color-primary-3: hsl(4, 100%, 67%, 15%); /* #FF6155 15% */
+  --color-primary-4: hsl(15, 100%, 61%); /* #FF6A3A */
+  --color-primary-5: hsl(346, 100%, 66%); /* #FF527B */
+  --color-neutral-1: hsl(234, 29%, 20%); /* #242742 */
+  --color-neutral-2: hsl(234, 29%, 20%, 50%); /* #242742 50% */
+  --color-neutral-3: hsl(243, 28%, 13%, 25%); /* #19182B 25% */
+  --color-neutral-4: hsl(235, 18%, 26%); /* #36384D */
+  --color-neutral-5: hsl(0, 0%, 0%, 25%); /* #000000 25% */
+  --color-neutral-6: hsl(0, 0%, 100%); /* #FFFFFF */
+
   /* Font sizes */
+
   /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
   /* Line heights */
+
   /* Letter spacings */
+
   /* Box shadows */
+  --box-shadow-primary: 0rem 1rem 2rem 0rem var(--color-primary-2); /* 0px 16px 32px 0px */
+  --box-shadow-neutral: 0rem 0.9375rem 3.75rem 0rem var(--color-neutral-5); /* 0px 15px 60px 0px */
+
   /* Border widths */
+  --border-width-s: 0.0625rem; /* 1px */
+
   /* Border radius */
+  --border-radius-none: 0rem;
+  --border-radius-s: 0.5rem; /* 8px */
+  --border-radius-l: 2.25rem; /* 36px */
+
   /* Spacings */
 }
 
