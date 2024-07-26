@@ -13,14 +13,18 @@
   --color-neutral-6: hsl(0, 0%, 100%); /* #FFFFFF */
 
   /* Font sizes */
+  --font-size-s: 0.75rem; /* 12px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-l: 2.5rem; /* 40px */
+  --font-size-xl: 3.5rem; /* 56px */
 
   /* Font weights */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 
   /* Line heights */
-
-  /* Letter spacings */
+  --line-height-s: 100%;
+  --line-height-base: 150%;
 
   /* Box shadows */
   --box-shadow-primary: 0rem 1rem 2rem 0rem var(--color-primary-2); /* 0px 16px 32px 0px */
@@ -35,6 +39,17 @@
   --border-radius-l: 2.25rem; /* 36px */
 
   /* Spacings */
+  --space-xs-1: 0.5rem; /* 8px */
+  --space-xs-2: 0.625rem; /* 10px */
+  --space-s-1: 0.875rem; /* 14px */
+  --space-s-2: 1rem; /* 16px */
+  --space-base: 1.125rem; /* 18px */
+  --space-m-1: 1.5rem; /* 24px */
+  --space-m-2: 2.5rem; /* 40px */
+  --space-l-1: 3rem; /* 48px */
+  --space-l-2: 4rem; /* 64px */
+  --space-xl-1: 6.0625rem; /* 97px */
+  --space-xl-2: 6.125rem; /* 98px */
 }
 
 @font-face {
