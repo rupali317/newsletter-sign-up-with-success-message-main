@@ -142,8 +142,6 @@ body {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
-  max-width: 23.4375rem; /* 375px */
-  margin: auto;
 }
 
 h1 {
@@ -176,13 +174,16 @@ button:hover {
 }
 
 .success-message {
-  padding: var(--space-none) var(--space-m-1) var(--space-m-2);
+  padding: var(--space-m-2) var(--space-m-1);
   background: var(--color-neutral-6);
   color: var(--color-neutral-1);
+  max-width: 23.4375rem; /* 375px */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: auto; /* RRC: Study without it the min-height takes 100vh. Why? */
+  max-width: 23.4375rem; /* 375px */
 }
 
 .success-message > div {
@@ -193,5 +194,32 @@ button:hover {
 
 .success-message h1 {
   margin-top: var(--space-s-2);
+}
+
+@media (min-width: 80rem) {
+  body {
+    background: var(--color-neutral-4);
+  }
+
+  h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  .success-message {
+    border-radius: var(--border-radius-l);
+    box-shadow: var(--box-shadow-neutral);
+    padding: var(--space-l-1) var(--space-l-2) var(--space-l-2) var(--space-l-2);
+    max-width: 31.5rem; /* 504px */
+    min-height: 32.5rem; /* 520px */
+  }
+
+  .success-message button {
+    margin-top: var(--space-m-2);
+  }
+
+  main {
+    min-height: 100vh;
+    display: flex;
+  }
 }
 /*************************************************************************/
