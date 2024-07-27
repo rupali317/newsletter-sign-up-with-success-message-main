@@ -40,7 +40,6 @@
   --border-radius-l: 2.25rem; /* 36px */
 
   /* Spacings */
-  --space-none: 0rem;
   --space-xxs-1: 0.25rem; /* 4px */
   --space-xs-1: 0.5rem; /* 8px */
   --space-xs-2: 0.625rem; /* 10px */
@@ -70,7 +69,14 @@
   font-style: normal;
   font-display: swap;
 }
-/*************************************************************************/
+
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("./assets//fonts/RobotoFlex-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 /************************* CSS Resets ************************************/
 *,
@@ -123,11 +129,6 @@ button {
   font: inherit;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
 /* Make images easier to work with */
 picture,
 img,
@@ -135,7 +136,6 @@ svg {
   max-width: 100%;
   display: block;
 }
-/*************************************************************************/
 
 /*********************** Main stylings ***********************************/
 body {
@@ -171,14 +171,18 @@ button:hover {
   cursor: pointer;
 }
 
-.sign-up-form {
+.sign-up-form,
+.success-message {
   display: flex;
-  flex-direction: column-reverse;
-  max-width: 23.4375rem; /* 375px */
-  margin: auto;
   min-height: 100vh;
-  justify-content: center;
+  max-width: 23.4375rem; /* 375px */
   background: var(--color-neutral-6);
+  margin: auto; /* RRC: Study without it the min-height takes 100vh. Why? */
+}
+
+.sign-up-form {
+  flex-direction: column-reverse;
+  justify-content: center;
 }
 
 .sign-up-form__information {
@@ -207,6 +211,7 @@ input {
 
 input::placeholder {
   color: var(--color-neutral-2);
+  font-family: "Roboto Flex";
 }
 
 input:focus,
@@ -257,15 +262,9 @@ input.error-input:focus-visible {
 }
 
 .success-message {
-  display: none !important;
   padding: var(--space-m-2) var(--space-m-1);
-  background: var(--color-neutral-6);
-  min-height: 100vh;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: auto; /* RRC: Study without it the min-height takes 100vh. Why? */
-  max-width: 23.4375rem; /* 375px */
+  justify-content: space-around;
 }
 
 .success-message > div {
@@ -327,4 +326,3 @@ input.error-input:focus-visible {
     margin-top: var(--space-m-2);
   }
 }
-/*************************************************************************/
