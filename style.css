@@ -41,6 +41,7 @@
 
   /* Spacings */
   --space-none: 0rem;
+  --space-xxs-1: 0.25rem; /* 4px */
   --space-xs-1: 0.5rem; /* 8px */
   --space-xs-2: 0.625rem; /* 10px */
   --space-s-1: 0.875rem; /* 14px */
@@ -142,6 +143,7 @@ body {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
+  color: var(--color-neutral-1);
 }
 
 h1 {
@@ -170,14 +172,94 @@ button:hover {
 }
 
 .sign-up-form {
-  display: none;
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 23.4375rem; /* 375px */
+  margin: auto;
+  min-height: 100vh;
+  justify-content: center;
+  background: var(--color-neutral-6);
+}
+
+.sign-up-form__information {
+  display: flex;
+  padding: var(--space-m-2) var(--space-m-1);
+  flex-direction: column;
+  gap: var(--space-m-1);
+}
+
+form {
+  margin-top: var(--space-s-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs-1);
+}
+
+form button {
+  margin-top: var(--space-s-2);
+}
+
+input {
+  padding: var(--space-s-2) var(--space-m-1);
+  border: var(--border-width-s) solid var(--color-neutral-3);
+  border-radius: var(--border-radius-s);
+}
+
+input::placeholder {
+  color: var(--color-neutral-2);
+}
+
+input:focus,
+input:focus-visible {
+  outline: none;
+  border: var(--border-width-s) solid var(--color-neutral-1);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs-2);
+}
+
+li {
+  display: flex;
+  gap: var(--space-s-2);
+  align-items: baseline;
+}
+
+li img {
+  transform: translateY(var(--space-xxs-1));
+}
+
+.label-section {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+  align-items: center;
+}
+
+label {
+  line-height: var(--line-height-base);
+}
+
+.error-message {
+  color: var(--color-primary-1);
+}
+
+.error-input,
+input.error-input:focus,
+input.error-input:focus-visible {
+  background: var(--color-primary-3);
+  color: var(--color-primary-1);
+  border: var(--border-width-s) solid var(--color-primary-1);
 }
 
 .success-message {
+  display: none !important;
   padding: var(--space-m-2) var(--space-m-1);
   background: var(--color-neutral-6);
-  color: var(--color-neutral-1);
-  max-width: 23.4375rem; /* 375px */
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -58,11 +58,20 @@
             </li>
           </ul>
           <form>
-            <label for="email-id">Email address</label>
+            <div class="label-section">
+              <label for="email-id">Email address</label>
+              <span
+                id="valid-email-required-message-id"
+                aria-live="polite"
+                class="error-message"
+                >Valid email required</span
+              >
+            </div>
             <input
               type="email"
               placeholder="email@company.com"
-              id="email-id"
+              aria-describedby="valid-email-required-message-id"
+              class="error-input"
               aria-required="true"
               required
             />
@@ -77,6 +86,8 @@
           <img
             src="./assets/images/illustration-sign-up-mobile.svg"
             alt="Sign up illustration"
+            width="375"
+            height="284"
           />
         </picture>
       </div>
