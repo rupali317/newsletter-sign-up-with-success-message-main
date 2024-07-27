@@ -51,8 +51,8 @@
   --space-m-2: 2.5rem; /* 40px */
   --space-l-1: 3rem; /* 48px */
   --space-l-2: 4rem; /* 64px */
-  --space-xl-1: 6.0625rem; /* 97px */
-  --space-xl-2: 6.125rem; /* 98px */
+  --space-xl-1: 4.5625rem; /* 73px */
+  --space-xl-2: 4.625rem; /* 74px */
 }
 
 @font-face {
@@ -236,6 +236,7 @@ li img {
   justify-content: space-between;
   font-size: var(--font-size-s);
   font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-base);
   align-items: center;
 }
 
@@ -259,7 +260,6 @@ input.error-input:focus-visible {
   display: none !important;
   padding: var(--space-m-2) var(--space-m-1);
   background: var(--color-neutral-6);
-
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -287,9 +287,37 @@ input.error-input:focus-visible {
     font-size: var(--font-size-xl);
   }
 
+  main {
+    min-height: 100vh;
+    display: flex;
+  }
+
+  .sign-up-form,
   .success-message {
     border-radius: var(--border-radius-l);
     box-shadow: var(--box-shadow-neutral);
+  }
+
+  .sign-up-form {
+    padding: var(--space-m-1);
+    max-width: 58rem; /* 928px */
+    min-height: 40.0625rem; /* 641px */
+    flex-direction: row;
+  }
+
+  .sign-up-form__information {
+    padding: var(--space-xl-2) var(--space-l-2) var(--space-xl-1)
+      var(--space-m-2);
+    max-width: 30rem; /* 480px */
+  }
+
+  picture img {
+    /* RRC: Is this correct? */
+    width: 25rem; /* 400px */
+    height: 37.0625rem; /* 593px */
+  }
+
+  .success-message {
     padding: var(--space-l-1) var(--space-l-2) var(--space-l-2) var(--space-l-2);
     max-width: 31.5rem; /* 504px */
     min-height: 32.5rem; /* 520px */
@@ -297,11 +325,6 @@ input.error-input:focus-visible {
 
   .success-message button {
     margin-top: var(--space-m-2);
-  }
-
-  main {
-    min-height: 100vh;
-    display: flex;
   }
 }
 /*************************************************************************/
