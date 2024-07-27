@@ -207,11 +207,13 @@ input {
   padding: var(--space-s-2) var(--space-m-1);
   border: var(--border-width-s) solid var(--color-neutral-3);
   border-radius: var(--border-radius-s);
+  font-family: "Roboto Flex";
+  color: var(--color-neutral-1);
 }
 
 input::placeholder {
   color: var(--color-neutral-2);
-  font-family: "Roboto Flex";
+  font-family: "Roboto";
 }
 
 input:focus,
@@ -300,12 +302,13 @@ input.error-input:focus-visible {
   .sign-up-form {
     padding: var(--space-m-1);
     max-width: 58rem; /* 928px */
-    min-height: 40.0625rem; /* 641px */
+    max-height: 40.0625rem; /* 641px */
+    min-height: initial;
     flex-direction: row;
   }
 
   .sign-up-form__information {
-    padding: var(--space-xl-2) var(--space-l-2) var(--space-xl-1)
+    padding: var(--space-xl-1) var(--space-l-2) var(--space-xl-2)
       var(--space-m-2);
     max-width: 30rem; /* 480px */
   }
