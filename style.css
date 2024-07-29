@@ -251,17 +251,22 @@ label {
   line-height: var(--line-height-base);
 }
 
-.error-message {
-  color: var(--color-primary-1);
-}
-
-.error-input,
-input.error-input:focus,
-input.error-input:focus-visible {
+input:invalid,
+input:invalid:focus,
+input:invalid:focus-visible {
   background: var(--color-primary-3);
   color: var(--color-primary-1);
   border: var(--border-width-s) solid var(--color-primary-1);
 }
+
+/* input:user-invalid + .label-section span::before {
+  content: "Valid email required";
+  color: var(--color-primary-1);
+}
+
+input + .label-section {
+  border: 1px solid blue;
+} */
 
 .success-message {
   padding: var(--space-m-2) var(--space-m-1);

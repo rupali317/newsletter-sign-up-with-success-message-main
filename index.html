@@ -69,16 +69,14 @@
               <span
                 id="valid-email-required-message-id"
                 aria-live="polite"
-                class="error-message"
-                >Valid email required</span
-              >
+              ></span>
             </div>
             <input
               type="email"
               id="email-id"
               placeholder="email@company.com"
+              pattern="[A-Za-z0-9._]+@[A-Za-z0-9]+\.[A-Za-z]{2,}"
               aria-describedby="valid-email-required-message-id"
-              class="error-input"
               aria-required="true"
               required
             />
