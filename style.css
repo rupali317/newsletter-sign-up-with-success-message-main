@@ -197,6 +197,12 @@ form {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs-1);
+  position: relative;
+}
+
+form span {
+  position: absolute;
+  right: 0;
 }
 
 form button {
@@ -238,15 +244,6 @@ li img {
   transform: translateY(var(--space-xxs-1));
 }
 
-.label-section {
-  display: flex;
-  justify-content: space-between;
-  font-size: var(--font-size-s);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-base);
-  align-items: center;
-}
-
 label {
   line-height: var(--line-height-base);
 }
@@ -259,14 +256,17 @@ input:invalid:focus-visible {
   border: var(--border-width-s) solid var(--color-primary-1);
 }
 
-/* input:user-invalid + .label-section span::before {
+input:invalid + span::before {
   content: "Valid email required";
   color: var(--color-primary-1);
 }
 
-input + .label-section {
-  border: 1px solid blue;
-} */
+form label,
+input:invalid + span::before {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-base);
+}
 
 .success-message {
   padding: var(--space-m-2) var(--space-m-1);
