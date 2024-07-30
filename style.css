@@ -284,6 +284,10 @@ input:invalid + span::before {
   margin-top: var(--space-s-2);
 }
 
+.hide {
+  display: none;
+}
+
 @media (min-width: 80rem) {
   body {
     background: var(--color-neutral-4);

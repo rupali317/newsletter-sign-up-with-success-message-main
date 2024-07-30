@@ -69,7 +69,7 @@
               type="email"
               id="email-id"
               placeholder="email@company.com"
-              pattern="[A-Za-z0-9._]+@[A-Za-z0-9]+\.[A-Za-z]{2,}"
+              pattern="([A-Za-z0-9._]+@[A-Za-z0-9]+\.[A-Za-z]{2,})"
               aria-describedby="valid-email-required-message-id"
               aria-required="true"
               required
@@ -78,7 +78,10 @@
               id="valid-email-required-message-id"
               aria-live="polite"
             ></span>
-            <button type="submit">Subscribe to monthly newsletter</button>
+            <button type="button" id="subscribe-js">
+              <!--submit or button-->
+              Subscribe to monthly newsletter
+            </button>
           </form>
         </div>
         <picture>
@@ -97,7 +100,7 @@
       <!-- Sign-up form end -->
 
       <!-- Success message start -->
-      <div class="success-message" aria-live="polite">
+      <div class="success-message hide" aria-live="polite">
         <div>
           <img
             src="./assets/images/icon-success.svg"
@@ -108,12 +111,12 @@
           />
           <h1>Thanks for subscribing!</h1>
           <p>
-            A confirmation email has been sent to <b>ash@loremcompany.com</b>.
+            A confirmation email has been sent to <b id="email-value-js"></b>.
             Please open it and click the button inside to confirm your
             subscription.
           </p>
         </div>
-        <button type="button">Dismiss message</button>
+        <button type="button" id="dismiss-js">Dismiss message</button>
       </div>
       <!-- Success message end -->
     </main>
