@@ -1,4 +1,4 @@
-/********************* Global definitions ********************************/
+/*------------------------- Global definitions --------------------------*/
 :root {
   /* Colors */
   --color-primary-1: hsl(4, 100%, 67%); /* #FF6155 */
@@ -30,6 +30,7 @@
   /* Box shadows */
   --box-shadow-primary: 0rem 1rem 2rem 0rem var(--color-primary-2); /* 0px 16px 32px 0px */
   --box-shadow-neutral: 0rem 0.9375rem 3.75rem 0rem var(--color-neutral-5); /* 0px 15px 60px 0px */
+  --box-shadow-focus: 0rem 0rem 0rem 0.25rem var(--color-primary-1); /* 0px 0px 0px 4px */
 
   /* Border widths */
   --border-width-none: 0rem;
@@ -78,7 +79,7 @@
   font-display: swap;
 }
 
-/************************* CSS Resets ************************************/
+/*------------------------------- CSS Resets -----------------------------*/
 *,
 *::before,
 *::after {
@@ -137,7 +138,7 @@ svg {
   display: block;
 }
 
-/*********************** Main stylings ***********************************/
+/*---------------------------- Main stylings -----------------------------*/
 body {
   font-family: "Roboto";
   font-size: var(--font-size-base);
@@ -169,6 +170,12 @@ button:hover {
   );
   box-shadow: var(--box-shadow-primary);
   cursor: pointer;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: var(--box-shadow-focus);
 }
 
 .sign-up-form,
