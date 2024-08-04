@@ -3,9 +3,10 @@
   /* Colors */
   --color-primary-1: hsl(4, 100%, 67%); /* #FF6155 */
   --color-primary-2: hsl(4, 100%, 67%, 50%); /* #FF6155 50% */
-  --color-primary-3: hsl(4, 100%, 67%, 15%); /* #FF6155 15% */
+  --color-primary-3: hsl(4, 100%, 67%, 10%); /* #FF6155 10% */
   --color-primary-4: hsl(15, 100%, 61%); /* #FF6A3A */
   --color-primary-5: hsl(346, 100%, 66%); /* #FF527B */
+  --color-primary-6: hsl(5, 56%, 36%); /* #8F3128 */
   --color-neutral-1: hsl(234, 29%, 20%); /* #242742 */
   --color-neutral-2: hsl(234, 29%, 20%, 50%); /* #242742 50% */
   --color-neutral-3: hsl(243, 28%, 13%, 25%); /* #19182B 25% */
@@ -262,13 +263,13 @@ input.error-input,
 input.error-input:focus,
 input.error-input:focus-visible {
   background: var(--color-primary-3);
-  color: var(--color-primary-1);
+  color: var(--color-primary-6);
   border: var(--border-width-s) solid var(--color-primary-1);
 }
 
 input.error-input + span::before {
   content: "Valid email required";
-  color: var(--color-primary-1);
+  color: var(--color-primary-6);
 }
 
 form label,
