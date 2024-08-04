@@ -190,6 +190,7 @@ button:focus-visible {
 .sign-up-form {
   flex-direction: column-reverse;
   justify-content: center;
+  align-items: center;
 }
 
 .sign-up-form__information {
@@ -249,6 +250,8 @@ li {
 
 li img {
   transform: translateY(var(--space-xxs-1));
+  width: 1.3125rem; /* 21px */
+  height: 1.3125rem; /* 21px */
 }
 
 label {
@@ -289,6 +292,15 @@ input + span {
 
 .success-message h1 {
   margin-top: var(--space-s-2);
+}
+
+.success-message button {
+  margin-top: var(--space-s-2);
+}
+
+.success-message img {
+  width: 4rem;
+  height: 4rem;
 }
 
 .hide {
