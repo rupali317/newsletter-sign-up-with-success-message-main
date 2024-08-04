@@ -4,15 +4,16 @@
   --color-primary-1: hsl(4, 100%, 67%); /* #FF6155 */
   --color-primary-2: hsl(4, 100%, 67%, 50%); /* #FF6155 50% */
   --color-primary-3: hsl(4, 100%, 67%, 10%); /* #FF6155 10% */
-  --color-primary-4: hsl(15, 100%, 61%); /* #FF6A3A */
-  --color-primary-5: hsl(346, 100%, 66%); /* #FF527B */
+  --color-primary-4: hsl(15, 77%, 44%); /* #C7451A */
+  --color-primary-5: hsl(346, 57%, 50%); /* #C83759 */
   --color-primary-6: hsl(5, 56%, 36%); /* #8F3128 */
   --color-neutral-1: hsl(234, 29%, 20%); /* #242742 */
-  --color-neutral-2: hsl(234, 29%, 20%, 50%); /* #242742 50% */
+  --color-neutral-2: hsl(266, 6%, 44%); /* #6F6977 */
   --color-neutral-3: hsl(243, 28%, 13%, 25%); /* #19182B 25% */
   --color-neutral-4: hsl(235, 18%, 26%); /* #36384D */
   --color-neutral-5: hsl(0, 0%, 0%, 25%); /* #000000 25% */
   --color-neutral-6: hsl(0, 0%, 100%); /* #FFFFFF */
+  --color-focus: hsl(208.97deg 100% 77.55%); /* #8DC8FF */
 
   /* Font sizes */
   --font-size-s: 0.75rem; /* 12px */
@@ -31,7 +32,7 @@
   /* Box shadows */
   --box-shadow-primary: 0rem 1rem 2rem 0rem var(--color-primary-2); /* 0px 16px 32px 0px */
   --box-shadow-neutral: 0rem 0.9375rem 3.75rem 0rem var(--color-neutral-5); /* 0px 15px 60px 0px */
-  --box-shadow-focus: 0rem 0rem 0rem 0.25rem var(--color-primary-1); /* 0px 0px 0px 4px */
+  --box-shadow-focus: 0rem 0rem 0rem 0.25rem var(--color-focus); /* 0px 0px 0px 4px */
 
   /* Border widths */
   --border-width-none: 0rem;
