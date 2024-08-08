@@ -47,7 +47,7 @@ Users should be able to:
 ![Newsletter sign up form - active](./screenshots/mobile/Newsletter-sign-up-form-active.png)
 ![Newsletter sign up form - error](./screenshots/mobile/Newsletter-sign-up-form-error.png)
 ![Success message - default](./screenshots/mobile/Success-message-default.png)
-![Success message - active](./screenshotsmobilep/Success-message-active.png)
+![Success message - active](./screenshots/mobile/Success-message-active.png)
 
 ### PageSpeed Insights results
 
@@ -82,7 +82,7 @@ Users should be able to:
 
 ### What I learned
 
-Based on the requirement, I implemented the solution related to checking the email format via Javascript. However, it could also be achieved by usinng the `pattern` attribute in the `input` tag.
+Based on the requirement, I implemented the solution related to checking the email format via Javascript. However, it could also be achieved by using the `pattern` attribute in the `input` tag.
 
 ## Acknowledgement
 
