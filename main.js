@@ -11,7 +11,8 @@ const DismissButton = SuccessMessageForm.querySelector("#dismiss-js");
 
 /*--------------------------- Event Listeners ---------------------------*/
 // Clicking sign up form's subscribe button
-SubscribeButton.addEventListener("click", () => {
+SubscribeButton.addEventListener("click", (event) => {
+  event.preventDefault();
   const EmailValue = EmailInputElement.value;
   if (IsEmailValid(EmailValue)) {
     toggleVisibiltyOfSections();
