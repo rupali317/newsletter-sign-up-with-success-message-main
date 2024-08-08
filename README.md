@@ -82,7 +82,7 @@ Users should be able to:
 
 ### What I learned
 
-Based on the requirement, I implemented the solution related to checking the email format via Javascript. However, it could also be achieved by using the `pattern` attribute in the `input` tag.
+Based on the requirement, I implemented the solution related to checking the email format via Javascript. However, it could also be achieved by using the `pattern` attribute in the `input` tag along with CSS's `:invalid` psuedo class
 
 ## Acknowledgement
 
