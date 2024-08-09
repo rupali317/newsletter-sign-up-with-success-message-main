@@ -3,11 +3,13 @@
 const SignUpForm = document.querySelector(".sign-up-form");
 const EmailInputElement = SignUpForm.querySelector("#email-id");
 const SubscribeButton = SignUpForm.querySelector("#subscribe-js");
+const SignUpFormHeading = SignUpForm.querySelector("h1");
 
 // DOM access for the elements of the success message component
 const SuccessMessageForm = document.querySelector(".success-message");
 const DisplayedEmail = SuccessMessageForm.querySelector("#email-value-js");
 const DismissButton = SuccessMessageForm.querySelector("#dismiss-js");
+const SuccessMessageHeading = SuccessMessageForm.querySelector("h1");
 
 /*--------------------------- Event Listeners ---------------------------*/
 // Clicking sign up form's subscribe button
@@ -18,6 +20,7 @@ SubscribeButton.addEventListener("click", (event) => {
     toggleVisibiltyOfSections();
     DisplayedEmail.textContent = EmailValue;
     resetEmailInput();
+    SuccessMessageHeading.focus();
   } else {
     EmailInputElement.classList.add("error-input");
   }
@@ -34,6 +37,7 @@ EmailInputElement.addEventListener("keypress", (event) => {
 // Clicking success message component's dismiss button
 DismissButton.addEventListener("click", () => {
   toggleVisibiltyOfSections();
+  SignUpFormHeading.focus();
 });
 
 /*------------------------- Function definitions -------------------------*/
